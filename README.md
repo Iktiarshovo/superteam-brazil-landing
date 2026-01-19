@@ -8,59 +8,34 @@ Modern, responsive landing page for **Superteam Brazil** - The Web3 Talent Hub o
 
 **[View Live Site →](https://superteam-brazil-landing.vercel.app/)**
 
-## 🚀 Setup (Next.js Version)
+## 🚀 Setup & Deployment
 
-The project now includes a modern **Next.js + Tailwind CSS** version in the `nextjs/` folder.
+The project is structured for **automatic Vercel deployment**:
 
-1. **Navigate to the folder:**
-   ```bash
-   cd nextjs
-   ```
+- **Next.js Version (Main):** Located at the root. Live at `superteam-brazil-landing.vercel.app`
+- **Vanilla Version:** Located in `public/vanilla`. Live at `superteam-brazil-landing.vercel.app/vanilla/index.html`
 
-2. **Install dependencies:**
+### 🏗️ Local Development
+
+1. **Install dependencies:**
    ```bash
    npm install
    ```
 
-3. **Run development server:**
+2. **Run development server:**
    ```bash
    npm run dev
    ```
 
-4. **Build for production:**
-   ```bash
-   npm run build
-   ```
+3. **Access:**
+   - Next.js: `http://localhost:3000`
+   - Vanilla: `http://localhost:3000/vanilla/index.html`
 
-## 💻 Setup (Vanilla Version)
+### 🛠 Tech Stack
 
-The original HTML/CSS version is preserved in the `vanilla/` folder.
-
-1. **Navigate to the folder:**
-   ```bash
-   cd vanilla
-   ```
-2. **Run with Live Server:**
-   ```bash
-   npx serve .
-   ```
-
-## 🛠 Tech Stack
-
-### Next.js Version
 - **Framework:** Next.js 14 (App Router)
-- **Styling:** Tailwind CSS
-- **Icons:** Lucide React
-- **Language:** TypeScript
-
-### Vanilla Version
-- **Core:** HTML5, CSS3, JavaScript (ES6+)
-- **Icons:** Font Awesome
-- **Fonts:** Manrope (Google Fonts)
-
-### Option 2: Deploy to Vercel
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Iktiarshovo/superteam-brazil-landing)
+- **Styling:** Tailwind CSS + Lucide Icons
+- **Legacy Version:** Vanilla HTML/CSS preserved in `/public/vanilla`
 
 ## 📁 Project Structure
 
