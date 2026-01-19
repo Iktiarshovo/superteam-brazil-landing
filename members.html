@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Diretório de Membros da Superteam Brazil - Conheça os builders, desenvolvedores e criadores da nossa comunidade Solana.">
+    <meta name="keywords" content="Superteam, Brazil, Membros, Desenvolvedores, Designers, Web3, Solana">
+    <meta name="author" content="Superteam Brazil">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Membros - Superteam Brazil">
+    <meta property="og:description"
+        content="Conheça os builders, desenvolvedores e criadores da nossa comunidade Solana.">
+    <meta property="og:type" content="website">
+
+    <title>Membros | Superteam Brazil 🇧🇷</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+
+<body>
+    <!-- ========================================
+       NAVIGATION
+       ======================================== -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar__container">
+            <a href="index.html" class="navbar__logo">
+                <span style="font-weight: 800; font-size: 1.25rem;">superteam</span>
+                <img src="https://flagcdn.com/w40/br.png" alt="BR"
+                    style="width: 28px; height: auto; margin-left: 0.5rem;">
+            </a>
+
+            <div class="navbar__menu" id="navMenu">
+                <a href="index.html#mission" class="navbar__link">Sobre</a>
+                <a href="index.html#events" class="navbar__link">Eventos</a>
+                <a href="index.html#members" class="navbar__link">Membros</a>
+                <a href="index.html#partners" class="navbar__link">Parceiros</a>
+                <a href="index.html#faq" class="navbar__link">FAQ</a>
+                <a href="members.html" class="navbar__link" style="color: var(--color-primary);">Comunidade</a>
+            </div>
+
+            <div class="navbar__actions">
+                <a href="index.html#join" class="btn btn--primary btn--sm">
+                    <i class="fas fa-rocket"></i>
+                    Entrar na Comunidade
+                </a>
+                <button class="navbar__toggle" id="navToggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========================================
+       MEMBERS PAGE CONTENT
+       ======================================== -->
+    <main class="members-page section">
+        <div class="container">
+            <div class="members-page__header" data-animate>
+                <span class="label">Nossa Comunidade</span>
+                <h1 class="heading-1">Diretório de <span class="text-gradient">Membros</span></h1>
+                <p class="subheading">
+                    Conheça os builders, desenvolvedores, designers e criadores que fazem
+                    parte da maior comunidade Solana do Brasil.
+                </p>
+            </div>
+
+            <!-- Search -->
+            <div class="members-page__search" data-animate>
+                <i class="fas fa-search members-page__search-icon"></i>
+                <input type="text" class="members-page__search-input" id="memberSearch" placeholder="Buscar membros..."
+                    autocomplete="off">
+            </div>
+
+            <!-- Filters -->
+            <div class="members-page__filters" data-animate>
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="core">Core Team</button>
+                <button class="filter-btn" data-filter="rust">Rust</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="content">Content</button>
+                <button class="filter-btn" data-filter="growth">Growth</button>
+                <button class="filter-btn" data-filter="community">Community</button>
+            </div>
+
+            <!-- Members Grid -->
+            <div class="members-page__grid" id="membersGrid">
+                <!-- Core Team Members -->
+                <div class="member-card member-card--core" data-tags="core ops lead" data-name="Alice Souza">
+                    <span class="member-card__badge">Core Team</span>
+                    <div class="member-card__avatar">
+                        <img src="https://i.pravatar.cc/160?img=11" alt="Alice Souza">
+                    </div>
+                    <h3 class="member-card__name">Alice Souza</h3>
+                    <p class="member-card__role">Ops Lead</p>
+                    <div class="member-card__tags">
+                        <span class="member-card__tag">Ops</span>
+                        <span class="member-card__tag">Lead</span>
+                    </div>
+                    <a href="https://twitter.com/alicesouza" target="_blank" class="member-card__social">
+                        <i class="fab fa-x-twitter"></i>
+                        @alicesouza
+                    </a>
+                </div>
+
+                <div class="member-card member-card--core" data-tags="core growth marketing" data-name="Ricardo Lima">
+                    <span class="member-card__badge">Core Team</span>
+                    <div class="member-card__avatar">
+                        <img src="https://i.pravatar.cc/160?img=68" alt="Ricardo Lima">
+                    </div>
+                    <h3 class="member-card__name">Ricardo Lima</h3>
+                    <p class="member-card__role">Growth Lead</p>
+                    <div class="member-card__tags">
+                        <span class="member-card__tag">Growth</span>
+                        <span class="member-card__tag">Marketing</span>
+                    </div>
+                    <a href="https://twitter.com/ricardolima" target="_blank" class="member-card__social">
+                        <i class="fab fa-x-twitter"></i>
+                        @ricardolima
+                    </a>
+                </div>
+
+                <div class="member-card member-card--core" data-tags="core community events" data-name="Marina Santos">
+                    <span class="member-card__badge">Core Team</span>
+                    <div class="member-card__avatar">
+                        <img src="https://i.pravatar.cc/160?img=47" alt="Marina Santos">
+                    </div>
+                    <h3 class="member-card__name">Marina Santos</h3>
+                    <p class="member-card__role">Community Lead</p>
+                    <div class="member-card__tags">
+                        <span class="member-card__tag">Community</span>
+                        <span class="member-card__tag">Events</span>
+                    </div>
+                    <a href="https://twitter.com/marinasantos" target="_blank" class="member-card__social">
+                        <i class="fab fa-x-twitter"></i>
+                        @marinasantos
+                    </a>
+                </div>
+
+                <!-- Regular Members - Rust/Backend -->
+                <div class="member-card" data-tags="rust backend solana" data-name="Bruno Dias">
+                    <div class="member-card__avatar">
+                        <img src="https://i.pravatar.cc/160?img=12" alt="Bruno Dias">
+                    </div>
+                    <h3 class="member-card__name">Bruno Dias</h3>
+                    <p class="member-card__role">Rust Developer</p>
+                    <div class="member-card__tags">
+                        <span class="member-card__tag">Rust</span>
+                        <span class="member-card__tag">Backend</span>
+                    </div>
+                    <a href="https://twitter.com/brunodias" target="_blank" class="member-card__social">
+                        <i class="fab fa-x-twitter"></i>
+                        @brunodias
+                    </a>
+                </div>
+
+                <div class="member-card" data-tags="rust anchor solana" data-name="Hugo Nascimento">
+                    <div class="member-card__avatar">
+                        <img src="https://i.pravatar.cc/160?img=53" alt="Hugo Nascimento">
+                    </div>
+                    <h3 class="member-card__name">Hugo Nascimento</h3>
+                    <p class="member-card__role">Smart Contract Dev</p>
+                    <div class="member-card__tags">
+                        <span class="member-card__tag">Anchor</span>
+                        <span class="member-card__tag">Solana</span>
+                    </div>
+                    <a href="https://twitter.com/hugon" target="_blank" class="member-card__social">
+                        <i class="fab fa-x-twitter"></i>
+                        @hugon
+                    </a>
+                </div>
+
+                <div class="member-card" data-tags="rust blockchain defi" data-name="Thiago Oliveira">
+                    <div class="member-card__avatar">
+                        <img src="https://i.pravatar.cc/160?img=59" alt="Thiago Oliveira">
+                    </div>
+                    <h3 class="member-card__name">Thiago Oliveira</h3>
+                    <p class="member-card__role">DeFi Developer</p>
+                    <div class="member-card__tags">
+                        <span class="member-card__tag">DeFi</span>
+                        <span class="member-card__tag">Rust</span>
+                    </div>
+                    <a href="https://twitter.com/thiagooliveira" target="_blank" class="member-card__social">
+                        <i class="fab fa-x-twitter"></i>
+                        @thiagooliveira
+                    </a>
+                </div>
+
+                <!-- Frontend Developers -->
+                <div class="member-card" data-tags="frontend react typescript" data-name="Felipe Almeida">
+                    <div class="member-card__avatar">
+                        <img src="https://i.pravatar.cc/160?img=33" alt="Felipe Almeida">
+                    </div>
+                    <h3 class="member-card__name">Felipe Almeida</h3>
+                    <p class="member-card__role">Frontend Dev</p>
+                    <div class="member-card__tags">
+                        <span class="member-card__tag">React</span>
+                        <span class="member-card__tag">TypeScript</span>
+                    </div>
+                    <a href="https://twitter.com/felipea" target="_blank" class="member-card__social">
+                        <i class="fab fa-x-twitter"></i>
+                        @felipea
+                    </a>
+                </div>
+
+                <div class="member-card" data-tags="frontend nextjs web3" data-name="Lucas Costa">
+                    <div class="member-card__avatar">
+                        <img src="https://i.pravatar.cc/160?img=31" alt="Lucas Costa">
+                    </div>
+                    <h3 class="member-card__name">Lucas Costa</h3>
+                    <p class="member-card__role">Web3 Frontend</p>
+                    <div class="member-card__tags">
+                        <span class="member-card__tag">Next.js</span>
+                        <span class="member-card__tag">Web3</span>
+                    </div>
+                    <a href="https://twitter.com/lucascosta" target="_blank" class="member-card__social">
+                        <i class="fab fa-x-twitter"></i>
+                        @lucascosta
+                    </a>
+                </div>
+
+                <div class="member-card" data-tags="frontend vue mobile" data-name="Juliana Mello">
+                    <div class="member-card__avatar">
+                        <img src="https://i.pravatar.cc/160?img=44" alt="Juliana Mello">
+                    </div>
+                    <h3 class="member-card__name">Juliana Mello</h3>
+                    <p class="member-card__role">Mobile Developer</p>
+                    <div class="member-card__tags">
+                        <span class="member-card__tag">React Native</span>
+                        <span class="member-card__tag">Mobile</span>
+                    </div>
+                    <a href="https://twitter.com/julianamello" target="_blank" class="member-card__social">
+                        <i class="fab fa-x-twitter"></i>
+                        @julianamello
+                    </a>
+                </div>
+
+                <!-- Designers -->
+                <div class="member-card" data-tags="design uiux figma" data-name="Carla Mel">
+                    <div class="member-card__avatar">
+                        <img src="https://i.pravatar.cc/160?img=5" alt="Carla Mel">
+                    </div>
+                    <h3 class="member-card__name">Carla Mel</h3>
+                    <p class="member-card__role">Product Designer</p>
+                    <div class="member-card__tags">
+                        <span class="member-card__tag">UI/UX</span>
+                        <span class="member-card__tag">Figma</span>
+                    </div>
+                    <a href="https://twitter.com/carlamel" target="_blank" class="member-card__social">
+                        <i class="fab fa-x-twitter"></i>
+                        @carlamel
+                    </a>
+                </div>
+
+                <div class="member-card" data-tags="design brand motion" data-name="Ana Beatriz">
+                    <div class="member-card__avatar">
+                        <img src="https://i.pravatar.cc/160?img=23" alt="Ana Beatriz">
+                    </div>
+                    <h3 class="member-card__name">Ana Beatriz</h3>
+                    <p class="member-card__role">Brand Designer</p>
+                    <div class="member-card__tags">
+                        <span class="member-card__tag">Brand</span>
+                        <span class="member-card__tag">Motion</span>
+                    </div>
+                    <a href="https://twitter.com/anabeatriz" target="_blank" class="member-card__social">
+                        <i class="fab fa-x-twitter"></i>
+                        @anabeatriz
+                    </a>
+                </div>
+
+                <div class="member-card" data-tags="design 3d nft" data-name="Pedro Henrique">
+                    <div class="member-card__avatar">
+                        <img src="https://i.pravatar.cc/160?img=60" alt="Pedro Henrique">
+                    </div>
+                    <h3 class="member-card__name">Pedro Henrique</h3>
+                    <p class="member-card__role">3D Artist</p>
+                    <div class="member-card__tags">
+                        <span class="member-card__tag">3D</span>
+                        <span class="member-card__tag">NFT Art</span>
+                    </div>
+                    <a href="https://twitter.com/pedroh" target="_blank" class="member-card__social">
+                        <i class="fab fa-x-twitter"></i>
+                        @pedroh
+                    </a>
+                </div>
+
+                <!-- Content Creators -->
+                <div class="member-card" data-tags="content video youtube" data-name="Gabriela Silva">
+                    <div class="member-card__avatar">
+                        <img src="https://i.pravatar.cc/160?img=20" alt="Gabriela Silva">
+                    </div>
+                    <h3 class="member-card__name">Gabriela Silva</h3>
+                    <p class="member-card__role">Content Creator</p>
+                    <div class="member-card__tags">
+                        <span class="member-card__tag">Video</span>
+                        <span class="member-card__tag">YouTube</span>
+                    </div>
+                    <a href="https://twitter.com/gabrielas" target="_blank" class="member-card__social">
+                        <i class="fab fa-x-twitter"></i>
+                        @gabrielas
+                    </a>
+                </div>
+
+                <div class="member-card" data-tags="content writing twitter" data-name="Matheus Rocha">
+                    <div class="member-card__avatar">
+                        <img src="https://i.pravatar.cc/160?img=52" alt="Matheus Rocha">
+                    </div>
+                    <h3 class="member-card__name">Matheus Rocha</h3>
+                    <p class="member-card__role">Technical Writer</p>
+                    <div class="member-card__tags">
+                        <span class="member-card__tag">Writing</span>
+                        <span class="member-card__tag">Docs</span>
+                    </div>
+                    <a href="https://twitter.com/matheusrocha" target="_blank" class="member-card__social">
+                        <i class="fab fa-x-twitter"></i>
+                        @matheusrocha
+                    </a>
+                </div>
+
+                <div class="member-card" data-tags="content podcast audio" data-name="Fernanda Costa">
+                    <div class="member-card__avatar">
+                        <img src="https://i.pravatar.cc/160?img=26" alt="Fernanda Costa">
+                    </div>
+                    <h3 class="member-card__name">Fernanda Costa</h3>
+                    <p class="member-card__role">Podcast Host</p>
+                    <div class="member-card__tags">
+                        <span class="member-card__tag">Podcast</span>
+                        <span class="member-card__tag">Audio</span>
+                    </div>
+                    <a href="https://twitter.com/fernandacosta" target="_blank" class="member-card__social">
+                        <i class="fab fa-x-twitter"></i>
+                        @fernandacosta
+                    </a>
+                </div>
+
+                <!-- Growth & Marketing -->
+                <div class="member-card" data-tags="growth marketing analytics" data-name="Daniel Farias">
+                    <div class="member-card__avatar">
+                        <img src="https://i.pravatar.cc/160?img=15" alt="Daniel Farias">
+                    </div>
+                    <h3 class="member-card__name">Daniel Farias</h3>
+                    <p class="member-card__role">Growth Specialist</p>
+                    <div class="member-card__tags">
+                        <span class="member-card__tag">Growth</span>
+                        <span class="member-card__tag">Analytics</span>
+                    </div>
+                    <a href="https://twitter.com/danielf" target="_blank" class="member-card__social">
+                        <i class="fab fa-x-twitter"></i>
+                        @danielf
+                    </a>
+                </div>
+
+                <div class="member-card" data-tags="growth bizdev partnerships" data-name="Carolina Mendes">
+                    <div class="member-card__avatar">
+                        <img src="https://i.pravatar.cc/160?img=38" alt="Carolina Mendes">
+                    </div>
+                    <h3 class="member-card__name">Carolina Mendes</h3>
+                    <p class="member-card__role">Biz Dev</p>
+                    <div class="member-card__tags">
+                        <span class="member-card__tag">BizDev</span>
+                        <span class="member-card__tag">Partnerships</span>
+                    </div>
+                    <a href="https://twitter.com/carolinamendes" target="_blank" class="member-card__social">
+                        <i class="fab fa-x-twitter"></i>
+                        @carolinamendes
+                    </a>
+                </div>
+
+                <!-- Community -->
+                <div class="member-card" data-tags="community events social" data-name="Elena Rodrigues">
+                    <div class="member-card__avatar">
+                        <img src="https://i.pravatar.cc/160?img=9" alt="Elena Rodrigues">
+                    </div>
+                    <h3 class="member-card__name">Elena Rodrigues</h3>
+                    <p class="member-card__role">Community Mgr</p>
+                    <div class="member-card__tags">
+                        <span class="member-card__tag">Events</span>
+                        <span class="member-card__tag">Social</span>
+                    </div>
+                    <a href="https://twitter.com/elenar" target="_blank" class="member-card__social">
+                        <i class="fab fa-x-twitter"></i>
+                        @elenar
+                    </a>
+                </div>
+
+                <div class="member-card" data-tags="community discord moderation" data-name="Rafael Pereira">
+                    <div class="member-card__avatar">
+                        <img src="https://i.pravatar.cc/160?img=57" alt="Rafael Pereira">
+                    </div>
+                    <h3 class="member-card__name">Rafael Pereira</h3>
+                    <p class="member-card__role">Discord Mod</p>
+                    <div class="member-card__tags">
+                        <span class="member-card__tag">Discord</span>
+                        <span class="member-card__tag">Support</span>
+                    </div>
+                    <a href="https://twitter.com/rafaelp" target="_blank" class="member-card__social">
+                        <i class="fab fa-x-twitter"></i>
+                        @rafaelp
+                    </a>
+                </div>
+
+                <!-- More Members -->
+                <div class="member-card" data-tags="rust security audit" data-name="Leonardo Gomes">
+                    <div class="member-card__avatar">
+                        <img src="https://i.pravatar.cc/160?img=67" alt="Leonardo Gomes">
+                    </div>
+                    <h3 class="member-card__name">Leonardo Gomes</h3>
+                    <p class="member-card__role">Security Auditor</p>
+                    <div class="member-card__tags">
+                        <span class="member-card__tag">Security</span>
+                        <span class="member-card__tag">Audit</span>
+                    </div>
+                    <a href="https://twitter.com/leog" target="_blank" class="member-card__social">
+                        <i class="fab fa-x-twitter"></i>
+                        @leog
+                    </a>
+                </div>
+
+                <div class="member-card" data-tags="frontend fullstack node" data-name="Isabella Ferreira">
+                    <div class="member-card__avatar">
+                        <img src="https://i.pravatar.cc/160?img=43" alt="Isabella Ferreira">
+                    </div>
+                    <h3 class="member-card__name">Isabella Ferreira</h3>
+                    <p class="member-card__role">Full Stack Dev</p>
+                    <div class="member-card__tags">
+                        <span class="member-card__tag">Full Stack</span>
+                        <span class="member-card__tag">Node.js</span>
+                    </div>
+                    <a href="https://twitter.com/isabellaf" target="_blank" class="member-card__social">
+                        <i class="fab fa-x-twitter"></i>
+                        @isabellaf
+                    </a>
+                </div>
+
+                <div class="member-card" data-tags="design illustration art" data-name="Amanda Vieira">
+                    <div class="member-card__avatar">
+                        <img src="https://i.pravatar.cc/160?img=32" alt="Amanda Vieira">
+                    </div>
+                    <h3 class="member-card__name">Amanda Vieira</h3>
+                    <p class="member-card__role">Illustrator</p>
+                    <div class="member-card__tags">
+                        <span class="member-card__tag">Illustration</span>
+                        <span class="member-card__tag">Art</span>
+                    </div>
+                    <a href="https://twitter.com/amandav" target="_blank" class="member-card__social">
+                        <i class="fab fa-x-twitter"></i>
+                        @amandav
+                    </a>
+                </div>
+
+                <div class="member-card" data-tags="content education teaching" data-name="Rodrigo Santos">
+                    <div class="member-card__avatar">
+                        <img src="https://i.pravatar.cc/160?img=14" alt="Rodrigo Santos">
+                    </div>
+                    <h3 class="member-card__name">Rodrigo Santos</h3>
+                    <p class="member-card__role">Educator</p>
+                    <div class="member-card__tags">
+                        <span class="member-card__tag">Education</span>
+                        <span class="member-card__tag">Workshops</span>
+                    </div>
+                    <a href="https://twitter.com/rodrigos" target="_blank" class="member-card__social">
+                        <i class="fab fa-x-twitter"></i>
+                        @rodrigos
+                    </a>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="members-page__load-more" data-animate>
+                <button class="btn btn--primary btn--lg" id="loadMoreBtn">
+                    <i class="fas fa-plus"></i>
+                    Carregar Mais
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- ========================================
+       FOOTER
+       ======================================== -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo">
+                        <div class="footer__logo-icon">⚡</div>
+                        Superteam Brasil
+                    </a>
+                    <p class="footer__description">
+                        O hub de talento Web3 do Brasil. Conectando builders, criadores e investors
+                        no ecossistema Solana.
+                    </p>
+                    <div class="footer__social">
+                        <a href="https://twitter.com/SuperteamBR" target="_blank" class="footer__social-link"
+                            title="Twitter/X">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="https://t.me/superteambr" target="_blank" class="footer__social-link" title="Telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://discord.gg/superteam" target="_blank" class="footer__social-link"
+                            title="Discord">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="https://linkedin.com/company/superteambr" target="_blank" class="footer__social-link"
+                            title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Comunidade</h4>
+                    <div class="footer__links">
+                        <a href="members.html" class="footer__link">Membros</a>
+                        <a href="index.html#events" class="footer__link">Eventos</a>
+                        <a href="https://lu.ma/superteambrazil" target="_blank" class="footer__link">Lu.ma</a>
+                        <a href="index.html#faq" class="footer__link">FAQ</a>
+                    </div>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Recursos</h4>
+                    <div class="footer__links">
+                        <a href="https://earn.superteam.fun" target="_blank" class="footer__link">Earn</a>
+                        <a href="https://superteam.fun/grants" target="_blank" class="footer__link">Grants</a>
+                        <a href="https://superteam.fun/member-perks" target="_blank" class="footer__link">Perks</a>
+                        <a href="#" class="footer__link">Blog</a>
+                    </div>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Global</h4>
+                    <div class="footer__links">
+                        <a href="https://superteam.fun" target="_blank" class="footer__link">Superteam Global</a>
+                        <a href="https://uae.superteam.fun" target="_blank" class="footer__link">Superteam UAE</a>
+                        <a href="https://de.superteam.fun" target="_blank" class="footer__link">Superteam Germany</a>
+                        <a href="https://vn.superteam.fun" target="_blank" class="footer__link">Superteam Vietnam</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    © 2026 Superteam Brasil. Todos os direitos reservados.
+                </p>
+                <a href="https://superteam.fun" target="_blank" class="footer__global">
+                    <i class="fas fa-globe"></i>
+                    Parte da Superteam Global
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
