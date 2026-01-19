@@ -24,7 +24,7 @@ Instead of submitting a static Figma prototype, I went the extra mile to build a
 
 Honestly, the **Solana ecosystem** has saved me multiple times financially through airdrops when I had nothing. I built this project as a **personal tribute** to give back to the community that supported me. I am happy to contribute to Superteam Brazil's growth, prize or no prize.
 
-**My SOL Address:** `AH4cJ2RU2b62T21AE9UswRevYUddheCSAEQ12mmLN2J8`
+
 
 ---
 
