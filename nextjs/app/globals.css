@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  --font-manrope: var(--font-manrope);
+
+  /* Brand Colors */
+  --color-primary: #6366F1;
+  --color-primary-light: #818CF8;
+  --color-primary-dark: #4F46E5;
+
+  /* Brazil Colors */
+  --color-brazil-green: #009C3B;
+  --color-brazil-green-dark: #007A2F;
+  --color-brazil-blue: #002776;
+  --color-brazil-yellow: #FFCC00;
+
+  /* Background Colors */
+  --color-bg-primary: #0A0A0F;
+  --color-bg-secondary: #12121A;
+  --color-bg-tertiary: #1A1A24;
+  --color-bg-card: #16161F;
+  --color-bg-card-hover: #1E1E2A;
+
+  /* Gradients */
+  --image-gradient-primary: linear-gradient(135deg, #6366F1 0%, #818CF8 100%);
+  --image-gradient-brazil: linear-gradient(135deg, #009C3B 0%, #002776 50%, #FFCC00 100%);
+  --image-gradient-hero: linear-gradient(135deg, #6366F1 0%, #009C3B 100%);
+
+  /* Shadows */
+  --shadow-glow: 0 0 40px rgba(99, 102, 241, 0.3);
+  --shadow-glow-green: 0 0 40px rgba(0, 156, 59, 0.3);
+
+  /* Animations */
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+}
+
+/* Utilities */
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, #6366F1 0%, #818CF8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-brazil {
+    background: linear-gradient(135deg, #009C3B 0%, #002776 50%, #FFCC00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glass {
+    background: rgba(22, 22, 31, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+}
+
+/* Base Styles */
+body {
+  font-family: var(--font-manrope);
+  background: var(--color-bg-primary);
+  color: white;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}

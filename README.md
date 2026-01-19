@@ -8,61 +8,55 @@ Modern, responsive landing page for **Superteam Brazil** - The Web3 Talent Hub o
 
 **[View Live Site →](https://superteam-brazil-landing.vercel.app/)**
 
-## ✨ Features
+## 🚀 Setup (Next.js Version)
 
-- 🌙 **Dark Mode** - Premium dark theme as primary design
-- 🎨 **Superteam + Brazilian Colors** - Purple gradients with green, blue & yellow accents
-- 🌍 **Interactive Globe** - Brazil highlighted with network connections
-- 📱 **Fully Responsive** - Works on desktop, tablet & mobile
-- ⚡ **Smooth Animations** - Scroll animations, hover effects, floating elements
-- 👥 **Members Directory** - Searchable & filterable member cards
-- 📋 **FAQ Accordion** - Interactive FAQ section
-- 🤝 **Partner Logos** - Solana, Magic Eden, Jupiter, Marinade & more
+The project now includes a modern **Next.js + Tailwind CSS** version in the `nextjs/` folder.
 
-## 📄 Pages
+1. **Navigate to the folder:**
+   ```bash
+   cd nextjs
+   ```
 
-| Page | Description |
-|------|-------------|
-| `index.html` | Main landing page with 10 sections |
-| `members.html` | Member directory with search & filter |
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-## 🏗️ Sections
+3. **Run development server:**
+   ```bash
+   npm run dev
+   ```
 
-1. **Hero** - Eye-catching intro with globe visualization
-2. **Mission** - What Superteam Brazil does (6 pillars)
-3. **Stats** - Community metrics with animated counters
-4. **Events** - Upcoming events showcase
-5. **Members** - Featured community members
-6. **Partners** - Ecosystem partner logos
-7. **Wall of Love** - Community testimonials
-8. **FAQ** - Frequently asked questions
-9. **Join CTA** - Call to action with social links
-10. **Footer** - Navigation & resources
+4. **Build for production:**
+   ```bash
+   npm run build
+   ```
 
-## 🛠️ Tech Stack
+## 💻 Setup (Vanilla Version)
 
-- **HTML5** - Semantic markup
-- **CSS3** - Custom properties, Flexbox, Grid, Animations
-- **JavaScript** - Vanilla JS for interactivity
-- **Google Fonts** - Manrope font family
-- **Font Awesome** - Icons
+The original HTML/CSS version is preserved in the `vanilla/` folder.
 
-## 🚀 Quick Start
+1. **Navigate to the folder:**
+   ```bash
+   cd vanilla
+   ```
+2. **Run with Live Server:**
+   ```bash
+   npx serve .
+   ```
 
-### Option 1: Clone & Run Locally
+## 🛠 Tech Stack
 
-```bash
-# Clone the repository
-git clone https://github.com/Iktiarshovo/superteam-brazil-landing.git
+### Next.js Version
+- **Framework:** Next.js 14 (App Router)
+- **Styling:** Tailwind CSS
+- **Icons:** Lucide React
+- **Language:** TypeScript
 
-# Navigate to directory
-cd superteam-brazil-landing
-
-# Open in browser
-# Simply open index.html in your browser
-# OR use a local server:
-npx serve .
-```
+### Vanilla Version
+- **Core:** HTML5, CSS3, JavaScript (ES6+)
+- **Icons:** Font Awesome
+- **Fonts:** Manrope (Google Fonts)
 
 ### Option 2: Deploy to Vercel
 
