@@ -2,7 +2,7 @@
 
 Modern, responsive landing page for **Superteam Brazil** - The Web3 Talent Hub of Latin America.
 
-![Superteam Brazil](https://superteam-brazil-landing.vercel.app/images/brazil_globe.png)
+![Superteam Brazil](https://superteam-brazil-landing-iktiarshovos-projects.vercel.app/images/brazil_globe.png)
 
 ## 🌐 Live Demo
 
