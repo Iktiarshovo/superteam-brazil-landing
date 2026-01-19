@@ -136,6 +136,30 @@ This project is open source under the [MIT License](LICENSE).
 - **Icons**: [Font Awesome](https://fontawesome.com)
 - **Fonts**: [Google Fonts - Manrope](https://fonts.google.com/specimen/Manrope)
 
+## 💜 Special Thanks
+
+This project is a **community contribution** built with love for the **Solana ecosystem** and **Web3 community**.
+
+### To the Solana Ecosystem ☀️
+Thank you for creating the fastest, most scalable, and most developer-friendly blockchain. The Solana community has been an incredible source of inspiration, innovation, and support. From the amazing DeFi protocols to the vibrant NFT scene, being part of this ecosystem is a privilege.
+
+### To the Web3 Community 🌐
+The decentralized future is being built by passionate developers, designers, and dreamers worldwide. This contribution is for everyone who believes in:
+- 🔓 **Open Source** - Knowledge should be free
+- 🤝 **Community First** - We grow together
+- 🚀 **Building in Public** - Transparency matters
+- 💡 **Innovation** - Pushing boundaries every day
+
+### To Superteam 🦸
+Thank you for creating a platform where talent meets opportunity. Superteam is not just a community—it's a movement that empowers builders across the globe.
+
 ---
 
+> *"Alone we can do so little; together we can do so much."*
+
 Made with 💜 for the Superteam Brazil community 🇧🇷
+
+Built by a proud **Solana believer** and **Web3 advocate** ☀️⚡
+
+**#Solana #Web3 #Superteam #OpenSource #Community**
+
