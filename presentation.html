@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superteam Brazil - Design Submission Presentation</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --brazil-green: #009C3B;
+            --brazil-blue: #002776;
+            --brazil-yellow: #FFCC00;
+            --solana-purple: #6366F1;
+            --bg-dark: #0A0A0F;
+            --bg-card: #16161F;
+            --text-primary: #FFFFFF;
+            --text-secondary: #A0A0A0;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+        
+        .page {
+            min-height: 100vh;
+            padding: 60px;
+            page-break-after: always;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        @media print {
+            .page {
+                page-break-after: always;
+                padding: 40px;
+            }
+        }
+        
+        /* Cover Page */
+        .cover-page {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, var(--bg-dark) 0%, #12121A 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cover-page::before {
+            content: '';
+            position: absolute;
+            top: -200px;
+            right: -200px;
+            width: 600px;
+            height: 600px;
+            background: var(--solana-purple);
+            opacity: 0.1;
+            border-radius: 50%;
+            filter: blur(100px);
+        }
+        
+        .cover-page::after {
+            content: '';
+            position: absolute;
+            bottom: -200px;
+            left: -200px;
+            width: 600px;
+            height: 600px;
+            background: var(--brazil-green);
+            opacity: 0.1;
+            border-radius: 50%;
+            filter: blur(100px);
+        }
+        
+        .cover-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .flag-emoji {
+            font-size: 80px;
+            margin-bottom: 30px;
+        }
+        
+        .cover-title {
+            font-size: 64px;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--text-primary), var(--brazil-green), var(--brazil-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+        }
+        
+        .cover-subtitle {
+            font-size: 28px;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+        }
+        
+        .cover-badge {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, var(--brazil-green), var(--brazil-blue));
+            border-radius: 50px;
+            font-weight: 600;
+            margin-bottom: 50px;
+        }
+        
+        .cover-links {
+            margin-top: 40px;
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .cover-link {
+            padding: 15px 30px;
+            background: var(--bg-card);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 14px;
+        }
+        
+        .cover-link span {
+            color: var(--brazil-yellow);
+        }
+        
+        .designer-info {
+            position: absolute;
+            bottom: 60px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: var(--text-secondary);
+        }
+        
+        /* Section Pages */
+        .section-page {
+            background: var(--bg-dark);
+        }
+        
+        .section-header {
+            margin-bottom: 50px;
+        }
+        
+        .section-number {
+            font-size: 14px;
+            color: var(--brazil-green);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+        }
+        
+        .section-title {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        
+        .section-title-pt {
+            font-size: 24px;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+        
+        .section-content {
+            flex: 1;
+        }
+        
+        /* Color Palette */
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .color-card {
+            background: var(--bg-card);
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .color-swatch {
+            height: 100px;
+        }
+        
+        .color-swatch.green { background: var(--brazil-green); }
+        .color-swatch.blue { background: var(--brazil-blue); }
+        .color-swatch.yellow { background: var(--brazil-yellow); }
+        .color-swatch.purple { background: var(--solana-purple); }
+        .color-swatch.black { background: var(--bg-dark); border: 1px solid rgba(255,255,255,0.2); }
+        
+        .color-info {
+            padding: 20px;
+        }
+        
+        .color-name {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .color-hex {
+            font-family: monospace;
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+        
+        /* Cards */
+        .card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+        
+        .card-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--brazil-green);
+        }
+        
+        .card-list {
+            list-style: none;
+        }
+        
+        .card-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            display: flex;
+            gap: 10px;
+        }
+        
+        .card-list li:last-child {
+            border-bottom: none;
+        }
+        
+        /* Flow Diagram */
+        .flow-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .flow-step {
+            background: var(--bg-card);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 20px 25px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .flow-number {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--brazil-green), var(--brazil-blue));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        
+        .flow-content h4 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        
+        .flow-content p {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+        
+        /* Comparison Table */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+        }
+        
+        .comparison-table th,
+        .comparison-table td {
+            padding: 20px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .comparison-table th {
+            background: var(--bg-card);
+            color: var(--brazil-yellow);
+            font-weight: 600;
+        }
+        
+        .comparison-table td:first-child {
+            color: var(--text-secondary);
+        }
+        
+        /* Checklist */
+        .checklist {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        
+        .checklist-item {
+            background: var(--bg-card);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .check-icon {
+            width: 30px;
+            height: 30px;
+            background: var(--brazil-green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        /* Quote */
+        .quote-box {
+            background: linear-gradient(135deg, rgba(99,102,241,0.1), rgba(0,156,59,0.1));
+            border: 1px solid rgba(99,102,241,0.3);
+            border-radius: 20px;
+            padding: 40px;
+            margin-top: 40px;
+            text-align: center;
+        }
+        
+        .quote-text {
+            font-size: 20px;
+            font-style: italic;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        
+        .quote-author {
+            color: var(--brazil-yellow);
+            font-weight: 600;
+        }
+        
+        /* Footer */
+        .page-footer {
+            margin-top: auto;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+        
+        /* Tech Stack */
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .tech-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 16px;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .tech-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+        
+        .tech-name {
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .tech-desc {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+        
+        /* Two Column */
+        .two-col {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cover Page -->
+    <div class="page cover-page">
+        <div class="cover-content">
+            <div class="flag-emoji">🇧🇷</div>
+            <h1 class="cover-title">Superteam Brazil</h1>
+            <p class="cover-subtitle">Landing Page Design Submission</p>
+            <div class="cover-badge">UX/UI Design Showcase</div>
+            
+            <div class="cover-links">
+                <div class="cover-link">
+                    🌐 <span>Live Site:</span> superteam-brazil-landing-iktiarshovos-projects.vercel.app
+                </div>
+                <div class="cover-link">
+                    📐 <span>Figma:</span> figma.com/design/gUm3ar5XLEyy9fWIicVpdR
+                </div>
+            </div>
+        </div>
+        
+        <div class="designer-info">
+            <p><strong>Designer:</strong> MD Iktiar Shovo | <strong>Date:</strong> January 2026</p>
+        </div>
+    </div>
+    
+    <!-- Section 1: Design Decisions -->
+    <div class="page section-page">
+        <div class="section-header">
+            <p class="section-number">Section 01</p>
+            <h2 class="section-title">Design Decisions & Rationale</h2>
+            <p class="section-title-pt">Decisões de Design e Justificativa</p>
+        </div>
+        
+        <div class="section-content">
+            <h3 style="margin-bottom: 25px; color: var(--brazil-yellow);">Color Palette | Paleta de Cores</h3>
+            
+            <div class="color-grid">
+                <div class="color-card">
+                    <div class="color-swatch green"></div>
+                    <div class="color-info">
+                        <p class="color-name">🟢 Brazilian Green</p>
+                        <p class="color-hex">#009C3B</p>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch blue"></div>
+                    <div class="color-info">
+                        <p class="color-name">🔵 Brazilian Blue</p>
+                        <p class="color-hex">#002776</p>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch yellow"></div>
+                    <div class="color-info">
+                        <p class="color-name">🟡 Brazilian Yellow</p>
+                        <p class="color-hex">#FFCC00</p>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch purple"></div>
+                    <div class="color-info">
+                        <p class="color-name">🟣 Solana Purple</p>
+                        <p class="color-hex">#6366F1</p>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch black"></div>
+                    <div class="color-info">
+                        <p class="color-name">⚫ Deep Black</p>
+                        <p class="color-hex">#0A0A0F</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="two-col">
+                <div class="card">
+                    <h4 class="card-title">Typography | Tipografia</h4>
+                    <ul class="card-list">
+                        <li>📝 <strong>Font:</strong> Manrope (Google Fonts)</li>
+                        <li>📐 <strong>Headlines:</strong> 5xl-7xl, Extra Bold</li>
+                        <li>📖 <strong>Body:</strong> lg-xl, Regular</li>
+                        <li>🏷️ <strong>Labels:</strong> sm, Uppercase tracking</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h4 class="card-title">Layout System | Sistema de Layout</h4>
+                    <ul class="card-list">
+                        <li>📏 <strong>Container:</strong> Max 1280px</li>
+                        <li>🔲 <strong>Grid:</strong> CSS Grid + Flexbox</li>
+                        <li>📐 <strong>Spacing:</strong> 8px base unit</li>
+                        <li>🃏 <strong>Cards:</strong> 16-24px radius, glassmorphism</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="page-footer">
+            <span>Superteam Brazil - Design Submission</span>
+            <span>Page 2</span>
+        </div>
+    </div>
+    
+    <!-- Section 2: Brazilian Identity -->
+    <div class="page section-page">
+        <div class="section-header">
+            <p class="section-number">Section 02</p>
+            <h2 class="section-title">Brazilian Identity Integration</h2>
+            <p class="section-title-pt">Integração da Identidade Brasileira</p>
+        </div>
+        
+        <div class="section-content">
+            <div class="two-col" style="margin-bottom: 30px;">
+                <div class="card">
+                    <h4 class="card-title">🎨 Visual Elements | Elementos Visuais</h4>
+                    <ul class="card-list">
+                        <li>🇧🇷 <strong>Flag Colors</strong> as design system foundation</li>
+                        <li>🌍 <strong>Brazil Globe</strong> image as hero visual</li>
+                        <li>✨ <strong>Gradient buttons:</strong> Green → Purple</li>
+                        <li>🌅 <strong>Background:</strong> Green, Blue, Yellow blurs</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h4 class="card-title">🗣️ Language | Linguagem</h4>
+                    <ul class="card-list">
+                        <li>📝 <strong>Portuguese First:</strong> All UI text</li>
+                        <li>🏠 <strong>Hero:</strong> "O Hub de Talento Web3 do Brasil"</li>
+                        <li>🔘 <strong>CTAs:</strong> "Entrar na Comunidade"</li>
+                        <li>👥 <strong>Members:</strong> "Diretório de Membros"</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h4 class="card-title">🌍 Community Connection | Conexão Comunitária</h4>
+                <ul class="card-list">
+                    <li>📊 <strong>Stats:</strong> "2K+ Membros", "$500K+ Pagos em Bounties", "150+ Projetos"</li>
+                    <li>📍 <strong>Events:</strong> São Paulo, Rio de Janeiro, Brasil locations</li>
+                    <li>🤝 <strong>Partners:</strong> Local Solana ecosystem logos (Jupiter, Magic Eden, Marinade)</li>
+                    <li>💬 <strong>Testimonials:</strong> Quotes from Brazilian community members</li>
+                    <li>❤️ <strong>Footer:</strong> "Made with 💜 for the community 🇧🇷"</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="page-footer">
+            <span>Superteam Brazil - Design Submission</span>
+            <span>Page 3</span>
+        </div>
+    </div>
+    
+    <!-- Section 3: User Flow -->
+    <div class="page section-page">
+        <div class="section-header">
+            <p class="section-number">Section 03</p>
+            <h2 class="section-title">Key User Flow Walkthrough</h2>
+            <p class="section-title-pt">Passo a Passo do Fluxo do Usuário</p>
+        </div>
+        
+        <div class="section-content">
+            <h3 style="margin-bottom: 25px; color: var(--brazil-yellow);">Landing Page Flow | Fluxo da Landing Page</h3>
+            
+            <div class="flow-container">
+                <div class="flow-step">
+                    <div class="flow-number">1</div>
+                    <div class="flow-content">
+                        <h4>Hero Section</h4>
+                        <p>User sees "O Hub de Talento Web3 do Brasil" with CTAs and stats</p>
+                    </div>
+                </div>
+                <div class="flow-step">
+                    <div class="flow-number">2</div>
+                    <div class="flow-content">
+                        <h4>Mission & Features</h4>
+                        <p>6 Pillars: Builder Support, Hackathons, Jobs, Bounties, Education, Networking</p>
+                    </div>
+                </div>
+                <div class="flow-step">
+                    <div class="flow-number">3</div>
+                    <div class="flow-content">
+                        <h4>Events Section</h4>
+                        <p>Upcoming meetups in São Paulo, Rio de Janeiro with dates</p>
+                    </div>
+                </div>
+                <div class="flow-step">
+                    <div class="flow-number">4</div>
+                    <div class="flow-content">
+                        <h4>Partners & Testimonials</h4>
+                        <p>Trusted by ecosystem partners + community member stories</p>
+                    </div>
+                </div>
+                <div class="flow-step">
+                    <div class="flow-number">5</div>
+                    <div class="flow-content">
+                        <h4>FAQ & Join CTA</h4>
+                        <p>Common questions answered + Discord/Twitter join buttons</p>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 style="margin: 40px 0 25px; color: var(--brazil-yellow);">Members Page | Página de Membros</h3>
+            
+            <div class="two-col">
+                <div class="card">
+                    <h4 class="card-title">🔍 Search & Filter</h4>
+                    <p>Real-time member search with category filters: All, Core Team, Rust, Frontend, Design, Content, Growth, Community</p>
+                </div>
+                <div class="card">
+                    <h4 class="card-title">👥 Member Cards</h4>
+                    <p>Avatar, Name, Role, Skill Tags, Social Links, Core Team badge for leaders</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="page-footer">
+            <span>Superteam Brazil - Design Submission</span>
+            <span>Page 4</span>
+        </div>
+    </div>
+    
+    <!-- Section 4: Why Live Website -->
+    <div class="page section-page">
+        <div class="section-header">
+            <p class="section-number">Section 04</p>
+            <h2 class="section-title">Why Live Website vs Static Prototype</h2>
+            <p class="section-title-pt">Por Que Site Funcional vs Protótipo Estático</p>
+        </div>
+        
+        <div class="section-content">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Static Figma</th>
+                        <th>Our Live Website ✅</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Click-through mockups</td>
+                        <td>Real interactive components</td>
+                    </tr>
+                    <tr>
+                        <td>Simulated navigation</td>
+                        <td>Working routing (Next.js App Router)</td>
+                    </tr>
+                    <tr>
+                        <td>Static images</td>
+                        <td>Real-time search & filtering</td>
+                    </tr>
+                    <tr>
+                        <td>Design concepts only</td>
+                        <td>Deployed & accessible globally</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3 style="margin: 40px 0 25px; color: var(--brazil-yellow);">Technology Stack | Stack Tecnológico</h3>
+            
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">⚡</div>
+                    <p class="tech-name">Next.js 14</p>
+                    <p class="tech-desc">App Router, SSR, Optimal Performance</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">🎨</div>
+                    <p class="tech-name">Tailwind CSS</p>
+                    <p class="tech-desc">Utility-first, Responsive Design</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">📄</div>
+                    <p class="tech-name">Vanilla JS</p>
+                    <p class="tech-desc">Pure HTML/CSS version preserved</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">🚀</div>
+                    <p class="tech-name">Vercel</p>
+                    <p class="tech-desc">Auto CI/CD, Global CDN, SSL</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="page-footer">
+            <span>Superteam Brazil - Design Submission</span>
+            <span>Page 5</span>
+        </div>
+    </div>
+    
+    <!-- Section 5: Deliverables -->
+    <div class="page section-page">
+        <div class="section-header">
+            <p class="section-number">Section 05</p>
+            <h2 class="section-title">Deliverables Summary</h2>
+            <p class="section-title-pt">Resumo das Entregas</p>
+        </div>
+        
+        <div class="section-content">
+            <h3 style="margin-bottom: 25px; color: var(--brazil-yellow);">Figma File Requirements | Requisitos do Arquivo Figma</h3>
+            
+            <div class="checklist">
+                <div class="checklist-item">
+                    <div class="check-icon">✓</div>
+                    <div>
+                        <strong>Landing page (desktop)</strong>
+                        <p style="color: var(--text-secondary); font-size: 14px;">All 9 sections designed</p>
+                    </div>
+                </div>
+                <div class="checklist-item">
+                    <div class="check-icon">✓</div>
+                    <div>
+                        <strong>Landing page (mobile)</strong>
+                        <p style="color: var(--text-secondary); font-size: 14px;">Responsive breakpoints</p>
+                    </div>
+                </div>
+                <div class="checklist-item">
+                    <div class="check-icon">✓</div>
+                    <div>
+                        <strong>Members page (desktop)</strong>
+                        <p style="color: var(--text-secondary); font-size: 14px;">Search, filter, member cards</p>
+                    </div>
+                </div>
+                <div class="checklist-item">
+                    <div class="check-icon">✓</div>
+                    <div>
+                        <strong>Members page (mobile)</strong>
+                        <p style="color: var(--text-secondary); font-size: 14px;">Mobile-optimized layout</p>
+                    </div>
+                </div>
+                <div class="checklist-item">
+                    <div class="check-icon">✓</div>
+                    <div>
+                        <strong>Component library</strong>
+                        <p style="color: var(--text-secondary); font-size: 14px;">48 reusable UI components</p>
+                    </div>
+                </div>
+                <div class="checklist-item">
+                    <div class="check-icon">✓</div>
+                    <div>
+                        <strong>Style guide</strong>
+                        <p style="color: var(--text-secondary); font-size: 14px;">Colors, typography, spacing</p>
+                    </div>
+                </div>
+                <div class="checklist-item">
+                    <div class="check-icon">✓</div>
+                    <div>
+                        <strong>Interactive prototype</strong>
+                        <p style="color: var(--text-secondary); font-size: 14px;">Slide navigation + Live site</p>
+                    </div>
+                </div>
+                <div class="checklist-item">
+                    <div class="check-icon">✓</div>
+                    <div>
+                        <strong>Presentation</strong>
+                        <p style="color: var(--text-secondary); font-size: 14px;">This document</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quote-box">
+                <p class="quote-text">
+                    "The Solana ecosystem has saved me multiple times financially through airdrops when I had nothing. I built this project as a personal tribute to give back to the community that supported me."
+                </p>
+                <p class="quote-author">— MD Iktiar Shovo</p>
+            </div>
+        </div>
+        
+        <div class="page-footer">
+            <span>Made with 💜 for the Superteam Brazil community 🇧🇷</span>
+            <span>Page 6</span>
+        </div>
+    </div>
+</body>
+</html>
