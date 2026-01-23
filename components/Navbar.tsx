@@ -17,7 +17,7 @@ export default function Navbar() {
                     <div className="flex flex-col leading-tight">
                         <span>Superteam</span>
                         <span className="text-xs text-brazil-green font-medium uppercase tracking-widest">
-                            Brazil
+                            Brasil
                         </span>
                     </div>
                 </Link>

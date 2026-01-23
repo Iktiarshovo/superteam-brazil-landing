@@ -75,7 +75,7 @@ export default function Hero() {
                     <div className="relative w-full aspect-square animate-[float_6s_ease-in-out_infinite]">
                         <Image
                             src="/images/brazil_globe.png"
-                            alt="Superteam Brazil Globe"
+                            alt="Superteam Brasil Globe"
                             fill
                             className="object-contain drop-shadow-[0_0_60px_rgba(0,156,59,0.3)]"
                             priority

@@ -9,7 +9,7 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Superteam Brazil | O Hub de Talento Web3 do Brasil 🇧🇷",
+  title: "Superteam Brasil | O Hub de Talento Web3 do Brasil 🇧🇷",
   description: "Construa, ganhe e conecte-se com os melhores desenvolvedores e criativos. Junte-se à maior comunidade Solana da América Latina.",
 };
 

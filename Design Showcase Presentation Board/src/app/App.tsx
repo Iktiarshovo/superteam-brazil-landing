@@ -25,14 +25,14 @@ export default function App() {
   const slides: Slide[] = [
     {
       type: "cover",
-      title: "Superteam Brazil",
+      title: "Superteam Brasil",
       subtitle: "Landing Page Design Showcase",
       description: "Web3 Talent Hub - Complete Scroll Flow Presentation"
     },
     {
       type: "screenshot",
       title: "Hero Section",
-      description: "Main landing page introducing Superteam Brazil as the Web3 talent hub",
+      description: "Main landing page introducing Superteam Brasil as the Web3 talent hub",
       image: heroImage
     },
     {
@@ -74,13 +74,13 @@ export default function App() {
     {
       type: "screenshot",
       title: "Frequently Asked Questions",
-      description: "Common questions about joining and participating in Superteam Brazil",
+      description: "Common questions about joining and participating in Superteam Brasil",
       image: faqImage
     },
     {
       type: "screenshot",
       title: "Call to Action",
-      description: "Join the community through Discord or Twitter",
+      description: "Join the community through Discord or X",
       image: ctaImage
     },
     {
@@ -92,7 +92,7 @@ export default function App() {
     {
       type: "closing",
       title: "Thank You",
-      subtitle: "Superteam Brazil Design Showcase",
+      subtitle: "Superteam Brasil Design Showcase",
       description: "Building the Future of Web3 in Latin America"
     }
   ];
@@ -219,11 +219,10 @@ export default function App() {
                 <button
                   key={index}
                   onClick={() => goToSlide(index)}
-                  className={`transition-all ${
-                    index === currentSlide
+                  className={`transition-all ${index === currentSlide
                       ? "w-8 h-2 bg-gradient-to-r from-emerald-500 to-blue-500 rounded-full"
                       : "w-2 h-2 bg-gray-600 hover:bg-gray-500 rounded-full"
-                  }`}
+                    }`}
                   aria-label={`Go to slide ${index + 1}`}
                   title={s.title}
                 />

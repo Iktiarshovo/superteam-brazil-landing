@@ -8,7 +8,7 @@ const tweets = [
         name: "Lucas Costa",
         handle: "@lucas_solana",
         avatar: "https://i.pravatar.cc/96?img=31",
-        content: "A Superteam Brazil mudou minha carreira. Consegui meu primeiro grant e agora trabalho full-time na web3! 🚀",
+        content: "A Superteam Brasil mudou minha carreira. Consegui meu primeiro grant e agora trabalho full-time na web3! 🚀",
     },
     {
         name: "Ana Silva",

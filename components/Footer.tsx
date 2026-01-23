@@ -25,7 +25,7 @@ export default function Footer() {
                             <div className="flex flex-col leading-tight">
                                 <span>Superteam</span>
                                 <span className="text-xs text-brazil-green font-medium uppercase tracking-widest">
-                                    Brazil
+                                    Brasil
                                 </span>
                             </div>
                         </Link>
@@ -76,7 +76,7 @@ export default function Footer() {
                 </div>
 
                 <div className="pt-8 border-t border-white/5 text-center text-gray-500 text-sm flex flex-col md:flex-row justify-between items-center gap-4">
-                    <p>© 2026 Superteam Brazil. Todos os direitos reservados.</p>
+                    <p>© 2026 Superteam Brasil. Todos os direitos reservados.</p>
                     <p>
                         Made with 💜 for the community 🇧🇷
                     </p>

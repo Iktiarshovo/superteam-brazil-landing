@@ -5,7 +5,7 @@ import { Plus, Minus } from "lucide-react";
 
 const faqs = [
     {
-        question: "O que é a Superteam Brazil?",
+        question: "O que é a Superteam Brasil?",
         answer: "Somos uma comunidade de desenvolvedores, criativos e operadores focada no ecossistema Solana. Ajudamos talentos a encontrar trabalho, grants e oportunidades na Web3.",
     },
     {
@@ -39,8 +39,8 @@ export default function FAQ() {
                         <div
                             key={index}
                             className={`border rounded-2xl transition-all duration-300 ${openIndex === index
-                                    ? "bg-[#16161F] border-primary/50"
-                                    : "bg-transparent border-white/10 hover:border-white/20"
+                                ? "bg-[#16161F] border-primary/50"
+                                : "bg-transparent border-white/10 hover:border-white/20"
                                 }`}
                         >
                             <button

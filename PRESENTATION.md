@@ -1,6 +1,6 @@
-# 🇧🇷 Superteam Brazil - Design Submission Presentation
+# 🇧🇷 Superteam Brasil - Design Submission Presentation
 
-## UX/UI Design for Superteam Brazil Landing Page
+## UX/UI Design for Superteam Brasil Landing Page
 
 **Designer:** MD Iktiar Shovo  
 **Submission Date:** January 2026  
@@ -9,9 +9,9 @@
 
 ---
 
-# 🇧🇷 Superteam Brazil - Apresentação do Design
+# 🇧🇷 Superteam Brasil - Apresentação do Design
 
-## Design UX/UI para Landing Page da Superteam Brazil
+## Design UX/UI para Landing Page da Superteam Brasil
 
 **Designer:** MD Iktiar Shovo  
 **Data de Submissão:** Janeiro 2026  
@@ -256,15 +256,15 @@ Instead of just submitting a static Figma prototype, we built a **fully function
 
 ### 🙏 A Tribute to Solana | Uma Homenagem à Solana
 
-> *"The Solana ecosystem has saved me multiple times financially through airdrops when I had nothing. I built this project as a personal tribute to give back to the community that supported me. I am happy to contribute to Superteam Brazil's growth, prize or no prize."*
+> *"The Solana ecosystem has saved me multiple times financially through airdrops when I had nothing. I built this project as a personal tribute to give back to the community that supported me. I am happy to contribute to Superteam Brasil's growth, prize or no prize."*
 
-> *"O ecossistema Solana me salvou financeiramente várias vezes através de airdrops quando eu não tinha nada. Construí este projeto como uma homenagem pessoal para retribuir à comunidade que me apoiou. Estou feliz em contribuir para o crescimento da Superteam Brazil, com ou sem prêmio."*
+> *"O ecossistema Solana me salvou financeiramente várias vezes através de airdrops quando eu não tinha nada. Construí este projeto como uma homenagem pessoal para retribuir à comunidade que me apoiou. Estou feliz em contribuir para o crescimento da Superteam Brasil, com ou sem prêmio."*
 
 ---
 
 **Thank you for reviewing my submission! | Obrigado por revisar minha submissão!**
 
-Made with 💜 for the Superteam Brazil community 🇧🇷
+Made with 💜 for the Superteam Brasil community 🇧🇷
 
 ---
 

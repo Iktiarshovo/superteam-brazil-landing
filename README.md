@@ -1,8 +1,8 @@
-# 🇧🇷 Superteam Brazil Landing Page
+# 🇧🇷 Superteam Brasil Landing Page
 
 > **The Web3 Talent Hub of Latin America | O Hub de Talento Web3 da América Latina**
 
-![Superteam Brazil](https://superteam-brazil-landing-iktiarshovos-projects.vercel.app/images/brazil_globe.png)
+![Superteam Brasil](https://superteam-brazil-landing-iktiarshovos-projects.vercel.app/images/brazil_globe.png)
 
 ## 🌐 Live Demo | Demo ao Vivo
 
@@ -129,10 +129,10 @@ npm run dev
 ## 🙏 My "Why" | Minha Motivação
 
 🇺🇸 **English:**  
-> *"The Solana ecosystem has saved me multiple times financially through airdrops when I had nothing. I built this project as a personal tribute to give back to the community that supported me. I am happy to contribute to Superteam Brazil's growth, prize or no prize."*
+> *"The Solana ecosystem has saved me multiple times financially through airdrops when I had nothing. I built this project as a personal tribute to give back to the community that supported me. I am happy to contribute to Superteam Brasil's growth, prize or no prize."*
 
 🇧🇷 **Português:**  
-> *"O ecossistema Solana me salvou financeiramente várias vezes através de airdrops quando eu não tinha nada. Construí este projeto como uma homenagem pessoal para retribuir à comunidade que me apoiou. Estou feliz em contribuir para o crescimento da Superteam Brazil, com ou sem prêmio."*
+> *"O ecossistema Solana me salvou financeiramente várias vezes através de airdrops quando eu não tinha nada. Construí este projeto como uma homenagem pessoal para retribuir à comunidade que me apoiou. Estou feliz em contribuir para o crescimento da Superteam Brasil, com ou sem prêmio."*
 
 ---
 
@@ -155,7 +155,7 @@ This project is open source under the [MIT License](LICENSE).
 > *"Alone we can do so little; together we can do so much."*  
 > *"Sozinhos podemos fazer tão pouco; juntos podemos fazer muito."*
 
-**Made with 💜 for the Superteam Brazil community 🇧🇷**
+**Made with 💜 for the Superteam Brasil community 🇧🇷**
 
 ---
 
