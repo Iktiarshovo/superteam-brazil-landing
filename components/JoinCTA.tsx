@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, MessageCircle, Twitter } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import { FaDiscord, FaXTwitter } from "react-icons/fa6";
 
 export default function JoinCTA() {
     return (
@@ -27,7 +28,7 @@ export default function JoinCTA() {
                                 target="_blank"
                                 className="w-full sm:w-auto px-8 py-4 bg-white text-[#0A0A0F] rounded-full font-bold hover:bg-gray-200 transition-colors flex items-center justify-center gap-2"
                             >
-                                <MessageCircle className="w-5 h-5" />
+                                <FaDiscord className="w-5 h-5" />
                                 Entrar no Discord
                             </Link>
                             <Link
@@ -35,7 +36,7 @@ export default function JoinCTA() {
                                 target="_blank"
                                 className="w-full sm:w-auto px-8 py-4 bg-[#1DA1F2]/10 text-[#1DA1F2] border border-[#1DA1F2]/20 rounded-full font-bold hover:bg-[#1DA1F2]/20 transition-all flex items-center justify-center gap-2"
                             >
-                                <Twitter className="w-5 h-5" />
+                                <FaXTwitter className="w-5 h-5" />
                                 Seguir no X
                             </Link>
                         </div>

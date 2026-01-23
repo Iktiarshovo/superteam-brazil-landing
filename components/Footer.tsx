@@ -1,12 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { Twitter, MessageCircle, Linkedin, Github } from "lucide-react";
+import { Linkedin, Github } from "lucide-react";
+import { FaDiscord, FaXTwitter } from "react-icons/fa6";
 
 // Social links configuration
 const socialLinks = [
-    { icon: Twitter, href: "https://x.com/SuperteamBR", label: "X (Twitter)" },
-    { icon: MessageCircle, href: "https://discord.com/invite/superteambrasil", label: "Discord" },
+    { icon: FaXTwitter, href: "https://x.com/SuperteamBR", label: "X (Twitter)" },
+    { icon: FaDiscord, href: "https://discord.com/invite/superteambrasil", label: "Discord" },
     { icon: Linkedin, href: "#", label: "LinkedIn" },
     { icon: Github, href: "#", label: "GitHub" },
 ];
