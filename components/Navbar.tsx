@@ -46,7 +46,7 @@ export default function Navbar() {
                 {/* Actions */}
                 <div className="hidden lg:flex items-center gap-4">
                     <Link
-                        href="https://discord.gg/superteam"
+                        href="https://discord.com/invite/superteambrasil"
                         target="_blank"
                         className="flex items-center gap-2 px-6 py-2.5 rounded-full bg-gradient-to-r from-primary to-brazil-green text-white font-semibold text-sm hover:-translate-y-0.5 hover:shadow-[0_0_20px_rgba(99,102,241,0.5)] transition-all"
                     >
@@ -87,7 +87,7 @@ export default function Navbar() {
                         Comunidade
                     </Link>
                     <Link
-                        href="https://discord.gg/superteam"
+                        href="https://discord.com/invite/superteambrasil"
                         target="_blank"
                         className="mt-4 flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-primary to-brazil-green text-white font-semibold"
                     >

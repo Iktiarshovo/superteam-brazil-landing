@@ -38,7 +38,7 @@ export default function Hero() {
 
                     <div className="flex flex-wrap gap-4">
                         <Link
-                            href="https://discord.gg/superteam"
+                            href="https://discord.com/invite/superteambrasil"
                             className="px-8 py-4 bg-gradient-to-r from-primary to-brazil-green text-white rounded-full font-semibold shadow-[0_0_40px_rgba(99,102,241,0.3)] hover:shadow-[0_0_60px_rgba(99,102,241,0.5)] hover:-translate-y-0.5 transition-all flex items-center gap-2"
                         >
                             Entrar na Comunidade <ArrowRight className="w-5 h-5" />

@@ -1,7 +1,15 @@
 "use client";
 
 import Link from "next/link";
-import { Twitter, Instagram, Linkedin, Github } from "lucide-react";
+import { Twitter, MessageCircle, Linkedin, Github } from "lucide-react";
+
+// Social links configuration
+const socialLinks = [
+    { icon: Twitter, href: "https://x.com/SuperteamBR", label: "X (Twitter)" },
+    { icon: MessageCircle, href: "https://discord.com/invite/superteambrasil", label: "Discord" },
+    { icon: Linkedin, href: "#", label: "LinkedIn" },
+    { icon: Github, href: "#", label: "GitHub" },
+];
 
 export default function Footer() {
     return (
@@ -24,13 +32,16 @@ export default function Footer() {
                             A maior comunidade de desenvolvedores e criativos do ecossistema Solana na América Latina.
                         </p>
                         <div className="flex gap-4">
-                            {[Twitter, Instagram, Linkedin, Github].map((Icon, i) => (
+                            {socialLinks.map((social, i) => (
                                 <Link
                                     key={i}
-                                    href="#"
+                                    href={social.href}
+                                    target={social.href !== "#" ? "_blank" : undefined}
+                                    rel={social.href !== "#" ? "noopener noreferrer" : undefined}
+                                    title={social.label}
                                     className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-white transition-all text-gray-400"
                                 >
-                                    <Icon size={20} />
+                                    <social.icon size={20} />
                                 </Link>
                             ))}
                         </div>
