@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Superteam Brasil - Design Submission Presentation</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         :root {
             --brazil-green: #009C3B;
             --brazil-blue: #002776;
@@ -23,14 +24,14 @@
             --text-primary: #FFFFFF;
             --text-secondary: #A0A0A0;
         }
-        
+
         body {
             font-family: 'Inter', sans-serif;
             background: var(--bg-dark);
             color: var(--text-primary);
             line-height: 1.6;
         }
-        
+
         .page {
             min-height: 100vh;
             padding: 60px;
@@ -38,14 +39,14 @@
             display: flex;
             flex-direction: column;
         }
-        
+
         @media print {
             .page {
                 page-break-after: always;
                 padding: 40px;
             }
         }
-        
+
         /* Cover Page */
         .cover-page {
             justify-content: center;
@@ -55,7 +56,7 @@
             position: relative;
             overflow: hidden;
         }
-        
+
         .cover-page::before {
             content: '';
             position: absolute;
@@ -68,7 +69,7 @@
             border-radius: 50%;
             filter: blur(100px);
         }
-        
+
         .cover-page::after {
             content: '';
             position: absolute;
@@ -81,17 +82,17 @@
             border-radius: 50%;
             filter: blur(100px);
         }
-        
+
         .cover-content {
             position: relative;
             z-index: 1;
         }
-        
+
         .flag-emoji {
             font-size: 80px;
             margin-bottom: 30px;
         }
-        
+
         .cover-title {
             font-size: 64px;
             font-weight: 800;
@@ -101,13 +102,13 @@
             background-clip: text;
             margin-bottom: 20px;
         }
-        
+
         .cover-subtitle {
             font-size: 28px;
             color: var(--text-secondary);
             margin-bottom: 40px;
         }
-        
+
         .cover-badge {
             display: inline-block;
             padding: 12px 30px;
@@ -116,7 +117,7 @@
             font-weight: 600;
             margin-bottom: 50px;
         }
-        
+
         .cover-links {
             margin-top: 40px;
             display: flex;
@@ -124,21 +125,21 @@
             justify-content: center;
             flex-wrap: wrap;
         }
-        
+
         .cover-link {
             padding: 15px 30px;
             background: var(--bg-card);
-            border: 1px solid rgba(255,255,255,0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 12px;
             color: var(--text-primary);
             text-decoration: none;
             font-size: 14px;
         }
-        
+
         .cover-link span {
             color: var(--brazil-yellow);
         }
-        
+
         .designer-info {
             position: absolute;
             bottom: 60px;
@@ -147,16 +148,16 @@
             text-align: center;
             color: var(--text-secondary);
         }
-        
+
         /* Section Pages */
         .section-page {
             background: var(--bg-dark);
         }
-        
+
         .section-header {
             margin-bottom: 50px;
         }
-        
+
         .section-number {
             font-size: 14px;
             color: var(--brazil-green);
@@ -164,23 +165,23 @@
             letter-spacing: 3px;
             margin-bottom: 10px;
         }
-        
+
         .section-title {
             font-size: 42px;
             font-weight: 700;
             margin-bottom: 15px;
         }
-        
+
         .section-title-pt {
             font-size: 24px;
             color: var(--text-secondary);
             font-weight: 400;
         }
-        
+
         .section-content {
             flex: 1;
         }
-        
+
         /* Color Palette */
         .color-grid {
             display: grid;
@@ -188,87 +189,102 @@
             gap: 20px;
             margin-bottom: 40px;
         }
-        
+
         .color-card {
             background: var(--bg-card);
             border-radius: 16px;
             overflow: hidden;
-            border: 1px solid rgba(255,255,255,0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
-        
+
         .color-swatch {
             height: 100px;
         }
-        
-        .color-swatch.green { background: var(--brazil-green); }
-        .color-swatch.blue { background: var(--brazil-blue); }
-        .color-swatch.yellow { background: var(--brazil-yellow); }
-        .color-swatch.purple { background: var(--solana-purple); }
-        .color-swatch.black { background: var(--bg-dark); border: 1px solid rgba(255,255,255,0.2); }
-        
+
+        .color-swatch.green {
+            background: var(--brazil-green);
+        }
+
+        .color-swatch.blue {
+            background: var(--brazil-blue);
+        }
+
+        .color-swatch.yellow {
+            background: var(--brazil-yellow);
+        }
+
+        .color-swatch.purple {
+            background: var(--solana-purple);
+        }
+
+        .color-swatch.black {
+            background: var(--bg-dark);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
         .color-info {
             padding: 20px;
         }
-        
+
         .color-name {
             font-weight: 600;
             margin-bottom: 5px;
         }
-        
+
         .color-hex {
             font-family: monospace;
             color: var(--text-secondary);
             font-size: 14px;
         }
-        
+
         /* Cards */
         .card {
             background: var(--bg-card);
-            border: 1px solid rgba(255,255,255,0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 16px;
             padding: 30px;
             margin-bottom: 20px;
         }
-        
+
         .card-title {
             font-size: 20px;
             font-weight: 600;
             margin-bottom: 15px;
             color: var(--brazil-green);
         }
-        
+
         .card-list {
             list-style: none;
         }
-        
+
         .card-list li {
             padding: 10px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.05);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
             display: flex;
             gap: 10px;
         }
-        
+
         .card-list li:last-child {
             border-bottom: none;
         }
-        
+
         /* Flow Diagram */
         .flow-container {
             display: flex;
             flex-direction: column;
             gap: 15px;
         }
-        
+
         .flow-step {
             background: var(--bg-card);
-            border: 1px solid rgba(255,255,255,0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 12px;
             padding: 20px 25px;
             display: flex;
             align-items: center;
             gap: 20px;
         }
-        
+
         .flow-number {
             width: 40px;
             height: 40px;
@@ -280,58 +296,58 @@
             font-weight: 700;
             flex-shrink: 0;
         }
-        
+
         .flow-content h4 {
             font-size: 18px;
             margin-bottom: 5px;
         }
-        
+
         .flow-content p {
             color: var(--text-secondary);
             font-size: 14px;
         }
-        
+
         /* Comparison Table */
         .comparison-table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 30px;
         }
-        
+
         .comparison-table th,
         .comparison-table td {
             padding: 20px;
             text-align: left;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
-        
+
         .comparison-table th {
             background: var(--bg-card);
             color: var(--brazil-yellow);
             font-weight: 600;
         }
-        
+
         .comparison-table td:first-child {
             color: var(--text-secondary);
         }
-        
+
         /* Checklist */
         .checklist {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 15px;
         }
-        
+
         .checklist-item {
             background: var(--bg-card);
-            border: 1px solid rgba(255,255,255,0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 12px;
             padding: 20px;
             display: flex;
             align-items: center;
             gap: 15px;
         }
-        
+
         .check-icon {
             width: 30px;
             height: 30px;
@@ -342,41 +358,41 @@
             justify-content: center;
             flex-shrink: 0;
         }
-        
+
         /* Quote */
         .quote-box {
-            background: linear-gradient(135deg, rgba(99,102,241,0.1), rgba(0,156,59,0.1));
-            border: 1px solid rgba(99,102,241,0.3);
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(0, 156, 59, 0.1));
+            border: 1px solid rgba(99, 102, 241, 0.3);
             border-radius: 20px;
             padding: 40px;
             margin-top: 40px;
             text-align: center;
         }
-        
+
         .quote-text {
             font-size: 20px;
             font-style: italic;
             line-height: 1.8;
             margin-bottom: 20px;
         }
-        
+
         .quote-author {
             color: var(--brazil-yellow);
             font-weight: 600;
         }
-        
+
         /* Footer */
         .page-footer {
             margin-top: auto;
             padding-top: 30px;
-            border-top: 1px solid rgba(255,255,255,0.1);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
             display: flex;
             justify-content: space-between;
             align-items: center;
             color: var(--text-secondary);
             font-size: 14px;
         }
-        
+
         /* Tech Stack */
         .tech-grid {
             display: grid;
@@ -384,30 +400,30 @@
             gap: 20px;
             margin-top: 30px;
         }
-        
+
         .tech-card {
             background: var(--bg-card);
-            border: 1px solid rgba(255,255,255,0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 16px;
             padding: 30px;
             text-align: center;
         }
-        
+
         .tech-icon {
             font-size: 40px;
             margin-bottom: 15px;
         }
-        
+
         .tech-name {
             font-weight: 600;
             margin-bottom: 10px;
         }
-        
+
         .tech-desc {
             font-size: 14px;
             color: var(--text-secondary);
         }
-        
+
         /* Two Column */
         .two-col {
             display: grid;
@@ -416,6 +432,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Cover Page -->
     <div class="page cover-page">
@@ -424,22 +441,26 @@
             <h1 class="cover-title">Superteam Brasil</h1>
             <p class="cover-subtitle">Landing Page Design Submission</p>
             <div class="cover-badge">UX/UI Design Showcase</div>
-            
+
             <div class="cover-links">
                 <div class="cover-link">
                     🌐 <span>Live Site:</span> superteam-brazil-landing-iktiarshovos-projects.vercel.app
                 </div>
                 <div class="cover-link">
-                    📐 <span>Figma:</span> figma.com/design/gUm3ar5XLEyy9fWIicVpdR
+                    📐 <span>Figma:</span>
+                    figma.com/make/PAnHJjOXLL4qCEVYher4nM/Web3-Landing-Page-Design?fullscreen=1&t=yskdPWjuV8ZSe4PU-1
+                </div>
+                <div class="cover-link">
+                    📄 <span>PDF:</span> drive.google.com/file/d/1r5cQ0E9hmcSCrpQcIz5MYncdA8t6X_8P/view
                 </div>
             </div>
         </div>
-        
+
         <div class="designer-info">
             <p><strong>Designer:</strong> MD Iktiar Shovo | <strong>Date:</strong> January 2026</p>
         </div>
     </div>
-    
+
     <!-- Section 1: Design Decisions -->
     <div class="page section-page">
         <div class="section-header">
@@ -447,10 +468,10 @@
             <h2 class="section-title">Design Decisions & Rationale</h2>
             <p class="section-title-pt">Decisões de Design e Justificativa</p>
         </div>
-        
+
         <div class="section-content">
             <h3 style="margin-bottom: 25px; color: var(--brazil-yellow);">Color Palette | Paleta de Cores</h3>
-            
+
             <div class="color-grid">
                 <div class="color-card">
                     <div class="color-swatch green"></div>
@@ -488,7 +509,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="two-col">
                 <div class="card">
                     <h4 class="card-title">Typography | Tipografia</h4>
@@ -510,13 +531,13 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="page-footer">
             <span>Superteam Brazil - Design Submission</span>
             <span>Page 2</span>
         </div>
     </div>
-    
+
     <!-- Section 2: Brazilian Identity -->
     <div class="page section-page">
         <div class="section-header">
@@ -524,7 +545,7 @@
             <h2 class="section-title">Brazilian Identity Integration</h2>
             <p class="section-title-pt">Integração da Identidade Brasileira</p>
         </div>
-        
+
         <div class="section-content">
             <div class="two-col" style="margin-bottom: 30px;">
                 <div class="card">
@@ -546,7 +567,7 @@
                     </ul>
                 </div>
             </div>
-            
+
             <div class="card">
                 <h4 class="card-title">🌍 Community Connection | Conexão Comunitária</h4>
                 <ul class="card-list">
@@ -558,13 +579,13 @@
                 </ul>
             </div>
         </div>
-        
+
         <div class="page-footer">
             <span>Superteam Brazil - Design Submission</span>
             <span>Page 3</span>
         </div>
     </div>
-    
+
     <!-- Section 3: User Flow -->
     <div class="page section-page">
         <div class="section-header">
@@ -572,10 +593,10 @@
             <h2 class="section-title">Key User Flow Walkthrough</h2>
             <p class="section-title-pt">Passo a Passo do Fluxo do Usuário</p>
         </div>
-        
+
         <div class="section-content">
             <h3 style="margin-bottom: 25px; color: var(--brazil-yellow);">Landing Page Flow | Fluxo da Landing Page</h3>
-            
+
             <div class="flow-container">
                 <div class="flow-step">
                     <div class="flow-number">1</div>
@@ -613,13 +634,14 @@
                     </div>
                 </div>
             </div>
-            
+
             <h3 style="margin: 40px 0 25px; color: var(--brazil-yellow);">Members Page | Página de Membros</h3>
-            
+
             <div class="two-col">
                 <div class="card">
                     <h4 class="card-title">🔍 Search & Filter</h4>
-                    <p>Real-time member search with category filters: All, Core Team, Rust, Frontend, Design, Content, Growth, Community</p>
+                    <p>Real-time member search with category filters: All, Core Team, Rust, Frontend, Design, Content,
+                        Growth, Community</p>
                 </div>
                 <div class="card">
                     <h4 class="card-title">👥 Member Cards</h4>
@@ -627,13 +649,13 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="page-footer">
             <span>Superteam Brazil - Design Submission</span>
             <span>Page 4</span>
         </div>
     </div>
-    
+
     <!-- Section 4: Why Live Website -->
     <div class="page section-page">
         <div class="section-header">
@@ -641,7 +663,7 @@
             <h2 class="section-title">Why Live Website vs Static Prototype</h2>
             <p class="section-title-pt">Por Que Site Funcional vs Protótipo Estático</p>
         </div>
-        
+
         <div class="section-content">
             <table class="comparison-table">
                 <thead>
@@ -669,9 +691,9 @@
                     </tr>
                 </tbody>
             </table>
-            
+
             <h3 style="margin: 40px 0 25px; color: var(--brazil-yellow);">Technology Stack | Stack Tecnológico</h3>
-            
+
             <div class="tech-grid">
                 <div class="tech-card">
                     <div class="tech-icon">⚡</div>
@@ -695,13 +717,13 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="page-footer">
             <span>Superteam Brazil - Design Submission</span>
             <span>Page 5</span>
         </div>
     </div>
-    
+
     <!-- Section 5: Deliverables -->
     <div class="page section-page">
         <div class="section-header">
@@ -709,10 +731,11 @@
             <h2 class="section-title">Deliverables Summary</h2>
             <p class="section-title-pt">Resumo das Entregas</p>
         </div>
-        
+
         <div class="section-content">
-            <h3 style="margin-bottom: 25px; color: var(--brazil-yellow);">Figma File Requirements | Requisitos do Arquivo Figma</h3>
-            
+            <h3 style="margin-bottom: 25px; color: var(--brazil-yellow);">Figma File Requirements | Requisitos do
+                Arquivo Figma</h3>
+
             <div class="checklist">
                 <div class="checklist-item">
                     <div class="check-icon">✓</div>
@@ -771,19 +794,21 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="quote-box">
                 <p class="quote-text">
-                    "The Solana ecosystem has saved me multiple times financially through airdrops when I had nothing. I built this project as a personal tribute to give back to the community that supported me."
+                    "The Solana ecosystem has saved me multiple times financially through airdrops when I had nothing. I
+                    built this project as a personal tribute to give back to the community that supported me."
                 </p>
                 <p class="quote-author">— MD Iktiar Shovo</p>
             </div>
         </div>
-        
+
         <div class="page-footer">
             <span>Made with 💜 for the Superteam Brazil community 🇧🇷</span>
             <span>Page 6</span>
         </div>
     </div>
 </body>
+
 </html>

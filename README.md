@@ -29,8 +29,9 @@ Em vez de enviar um protótipo estático do Figma, eu fui além e construí um *
 ### 🔗 Links
 
 - **GitHub Repo:** [github.com/Iktiarshovo/superteam-brazil-landing](https://github.com/Iktiarshovo/superteam-brazil-landing)
-- **Figma Design:** [View on Figma](https://www.figma.com/design/gUm3ar5XLEyy9fWIicVpdR/Design-Showcase-Presentation-Board)
+- **Figma Design:** [View on Figma](https://www.figma.com/make/PAnHJjOXLL4qCEVYher4nM/Web3-Landing-Page-Design?fullscreen=1&t=yskdPWjuV8ZSe4PU-1)
 - **Presentation:** [PRESENTATION.md](./PRESENTATION.md)
+- **Presentation PDF:** [Download PDF](https://drive.google.com/file/d/1r5cQ0E9hmcSCrpQcIz5MYncdA8t6X_8P/view?usp=sharing)
 
 ---
 

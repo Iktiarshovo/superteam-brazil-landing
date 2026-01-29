@@ -5,7 +5,8 @@
 **Designer:** MD Iktiar Shovo  
 **Submission Date:** January 2026  
 **Live Demo:** [superteam-brazil-landing-iktiarshovos-projects.vercel.app](https://superteam-brazil-landing-iktiarshovos-projects.vercel.app/)  
-**Figma File:** [View on Figma](https://www.figma.com/design/gUm3ar5XLEyy9fWIicVpdR/Design-Showcase-Presentation-Board)
+**Figma File:** [View on Figma](https://www.figma.com/make/PAnHJjOXLL4qCEVYher4nM/Web3-Landing-Page-Design?fullscreen=1&t=yskdPWjuV8ZSe4PU-1)  
+**Presentation PDF:** [Download PDF](https://drive.google.com/file/d/1r5cQ0E9hmcSCrpQcIz5MYncdA8t6X_8P/view?usp=sharing)
 
 ---
 
@@ -16,7 +17,8 @@
 **Designer:** MD Iktiar Shovo  
 **Data de Submissão:** Janeiro 2026  
 **Demo ao Vivo:** [superteam-brazil-landing-iktiarshovos-projects.vercel.app](https://superteam-brazil-landing-iktiarshovos-projects.vercel.app/)  
-**Arquivo Figma:** [Ver no Figma](https://www.figma.com/design/gUm3ar5XLEyy9fWIicVpdR/Design-Showcase-Presentation-Board)
+**Arquivo Figma:** [Ver no Figma](https://www.figma.com/make/PAnHJjOXLL4qCEVYher4nM/Web3-Landing-Page-Design?fullscreen=1&t=yskdPWjuV8ZSe4PU-1)  
+**PDF da Apresentação:** [Baixar PDF](https://drive.google.com/file/d/1r5cQ0E9hmcSCrpQcIz5MYncdA8t6X_8P/view?usp=sharing)
 
 ---
 
