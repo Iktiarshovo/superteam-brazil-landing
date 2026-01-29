@@ -4,9 +4,9 @@
 
 **Designer:** MD Iktiar Shovo  
 **Submission Date:** January 2026  
-**Live Demo:** [superteam-brazil-landing-iktiarshovos-projects.vercel.app](https://superteam-brazil-landing-iktiarshovos-projects.vercel.app/)  
+**Live Demo:** [superteambrazillanding.netlify.app](https://superteambrazillanding.netlify.app/)  
 **Figma File:** [View on Figma](https://www.figma.com/make/PAnHJjOXLL4qCEVYher4nM/Web3-Landing-Page-Design?fullscreen=1&t=yskdPWjuV8ZSe4PU-1)  
-**Presentation PDF:** [Download PDF](https://drive.google.com/file/d/1r5cQ0E9hmcSCrpQcIz5MYncdA8t6X_8P/view?usp=sharing)
+**Presentation PDF:** [Download PDF](https://drive.google.com/file/d/1CvxETVRDqg12hSQLccwDef56ITvbQYEV/view?usp=sharing)
 
 ---
 
@@ -16,9 +16,9 @@
 
 **Designer:** MD Iktiar Shovo  
 **Data de Submissão:** Janeiro 2026  
-**Demo ao Vivo:** [superteam-brazil-landing-iktiarshovos-projects.vercel.app](https://superteam-brazil-landing-iktiarshovos-projects.vercel.app/)  
+**Demo ao Vivo:** [superteambrazillanding.netlify.app](https://superteambrazillanding.netlify.app/)  
 **Arquivo Figma:** [Ver no Figma](https://www.figma.com/make/PAnHJjOXLL4qCEVYher4nM/Web3-Landing-Page-Design?fullscreen=1&t=yskdPWjuV8ZSe4PU-1)  
-**PDF da Apresentação:** [Baixar PDF](https://drive.google.com/file/d/1r5cQ0E9hmcSCrpQcIz5MYncdA8t6X_8P/view?usp=sharing)
+**PDF da Apresentação:** [Baixar PDF](https://drive.google.com/file/d/1CvxETVRDqg12hSQLccwDef56ITvbQYEV/view?usp=sharing)
 
 ---
 
@@ -224,8 +224,8 @@ Instead of just submitting a static Figma prototype, we built a **fully function
 
 ### 🔗 Live URLs | URLs ao Vivo
 
-- **Next.js Version:** https://superteam-brazil-landing-iktiarshovos-projects.vercel.app/
-- **Vanilla Version:** https://superteam-brazil-landing-iktiarshovos-projects.vercel.app/vanilla/index.html
+- **Next.js Version:** https://superteambrazillanding.netlify.app/
+- **Vanilla Version:** https://superteambrazillanding.netlify.app/vanilla/index.html
 - **GitHub Repository:** https://github.com/Iktiarshovo/superteam-brazil-landing
 
 ---

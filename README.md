@@ -2,11 +2,11 @@
 
 > **The Web3 Talent Hub of Latin America | O Hub de Talento Web3 da América Latina**
 
-![Superteam Brasil](https://superteam-brazil-landing-iktiarshovos-projects.vercel.app/images/brazil_globe.png)
+![Superteam Brasil](https://superteambrazillanding.netlify.app/images/brazil_globe.png)
 
 ## 🌐 Live Demo | Demo ao Vivo
 
-**[🚀 View Live Site →](https://superteam-brazil-landing-iktiarshovos-projects.vercel.app/)**
+**[🚀 View Live Site →](https://superteambrazillanding.netlify.app/)**
 
 ---
 
@@ -31,7 +31,7 @@ Em vez de enviar um protótipo estático do Figma, eu fui além e construí um *
 - **GitHub Repo:** [github.com/Iktiarshovo/superteam-brazil-landing](https://github.com/Iktiarshovo/superteam-brazil-landing)
 - **Figma Design:** [View on Figma](https://www.figma.com/make/PAnHJjOXLL4qCEVYher4nM/Web3-Landing-Page-Design?fullscreen=1&t=yskdPWjuV8ZSe4PU-1)
 - **Presentation:** [PRESENTATION.md](./PRESENTATION.md)
-- **Presentation PDF:** [Download PDF](https://drive.google.com/file/d/1r5cQ0E9hmcSCrpQcIz5MYncdA8t6X_8P/view?usp=sharing)
+- **Presentation PDF:** [Download PDF](https://drive.google.com/file/d/1CvxETVRDqg12hSQLccwDef56ITvbQYEV/view?usp=sharing)
 
 ---
 
@@ -122,8 +122,8 @@ npm run dev
 
 | Version | URL |
 |---------|-----|
-| **Next.js (Main)** | `superteam-brazil-landing-iktiarshovos-projects.vercel.app` |
-| **Vanilla** | `superteam-brazil-landing-iktiarshovos-projects.vercel.app/vanilla/index.html` |
+| **Next.js (Main)** | `superteambrazillanding.netlify.app` |
+| **Vanilla** | `superteambrazillanding.netlify.app/vanilla/index.html` |
 
 ---
 
